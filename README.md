@@ -240,5 +240,3 @@ The project is licensed under the [MIT License](https://github.com/tanmaypardesh
 #### Kailash Singaravelu
 #### Saikaushik Kalyanaraman
 #### Shakthi Nandana Govindan
-
-mangaloser FTW
