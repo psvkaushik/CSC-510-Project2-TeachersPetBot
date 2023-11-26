@@ -2,12 +2,15 @@ import platform
 import asyncio
 import os
 import re
+import sqlite3
 from time import time
 from platform import python_version
 from datetime import datetime, timedelta
 import json
 from psutil import Process, virtual_memory
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
+from prettytable import PrettyTable
+from leaderboard_card import draw_leaderboard
 
 import discord
 from discord import Embed
@@ -125,9 +128,10 @@ async def on_ready():
     ''')
     db.mutation_query('''
         CREATE TABLE IF NOT EXISTS rank (
-            user_id     INT NOT NULL,
+            user_id     INT NOT NULL UNIQUE ON CONFLICT IGNORE,
             experience  INT DEFAULT 0,
-            level       INT DEFAULT 0            
+            level       INT DEFAULT 0,
+            violation_num     INT DEFAULT 0                     
         )
     ''')
     db.mutation_query('''
@@ -140,15 +144,39 @@ async def on_ready():
                 time_between_clears     INT
             )
         ''')
-    db.mutation_query('''
-            CREATE TABLE IF NOT EXISTS explicit_content_violations (
-                user_id           INT NOT NULL,
-                violation_num     INT DEFAULT 0
-            )
-        ''')
+    # db.mutation_query('''
+    #         CREATE TABLE IF NOT EXISTS explicit_content_violations (
+    #             user_id           INT NOT NULL UNIQUE ON CONFLICT IGNORE,
+    #             violation_num     INT DEFAULT 0
+    #         )
+    #     ''')
     event_creation.init(bot)
     office_hours.init(bot)
     spam.init(bot)  #initialize the spam function of the bot so spam.py has
+
+    # Get the user list from general
+    guild = bot.guilds[0]
+    channel_name = 'general'
+    general_channel = discord.utils.get(guild.channels, name=channel_name, type=discord.ChannelType.text)
+    general_members = general_channel.members
+    # Get the general user_ids, make sure the bot is ignored
+    general_ids = [i.id for i in general_members if i.bot == False]
+
+    channel_name = 'instructor-commands'
+    instructor_channel = discord.utils.get(guild.channels, name=channel_name, type=discord.ChannelType.text)
+    instructor_members = instructor_channel.members
+    # Get the instructor user_ids, make sure the bot is ignored
+    instructor_ids = [i.id for i in instructor_members if i.bot == False]
+    
+    for i in range(len(general_ids)):
+        if general_ids[i] not in instructor_ids:
+            update_rank_table_query = f"INSERT into rank (user_id, level, experience, violation_num) VALUES(?, ?, ?, ?)"
+            db.mutation_query(update_rank_table_query, (general_ids[i], 0, 0, 0))
+        # else:
+        #     update_rank_table_query = f"INSERT into rank (user_id, level, experience) VALUES(?, ?, ?)"
+        #     db.mutation_query(update_rank_table_query, (general_ids[i], 0, 0))
+        # update_explicit_table_query = f"INSERT into explicit_content_violations (user_id, violation_num) VALUES(?, ?)"
+        # db.mutation_query(update_explicit_table_query, (general_ids[i], 0))
     # access to the bot and clearing starts
     print("Ranking system initialized!")
     print('Logged in as')
@@ -300,9 +328,6 @@ async def on_message(message):
         await message.delete()
     await bot.process_commands(message)
 
-    if is_timeout:
-        return
-
     if message.content == 'hey bot':
         response = 'hey yourself ;)'
         await message.channel.send(response)
@@ -321,19 +346,27 @@ async def on_message(message):
     else:
         pass
     # Ranking System
-    if message.author.bot is False:
+    if message.author.bot is False and not instructor:
         id_query = f"SELECT * FROM rank where user_id=?"
         result = db.select_query(id_query, (message.author.id,))
         result = result.fetchone()
-        if result[1] == 99:
-            await message.channel.send(
-                f"{message.author.mention} has advanced to level {result[2]+1}!"
-            )
-            update_query = f"UPDATE rank SET experience=0, level=?  WHERE user_id=?"
-            db.mutation_query(update_query, (result[2]+1, message.author.id))
-        else:
-            update_query = f"UPDATE rank SET experience=? WHERE user_id=?"
-            db.mutation_query(update_query, (result[1]+1, message.author.id))
+        try:
+            if result[1] == 99:
+                await message.channel.send(
+                    f"{message.author.mention} has advanced to level {result[2]+1}!"
+                )
+                update_query = f"UPDATE rank SET experience=0, level=?  WHERE user_id=?"
+                db.mutation_query(update_query, (result[2]+1, message.author.id))
+            else:
+                update_query = f"UPDATE rank SET experience=? WHERE user_id=?"
+                db.mutation_query(update_query, (result[1]+1, message.author.id))
+        except Exception as error:
+            print(" the error is : ", error)
+            # write_query = f"INSERT into rank (user_id, level, experience) VALUES(?, ?, ?)"
+            # if instructor:
+            #     db.mutation_query(write_query, (message.author.id, 100, 0))
+            # else:
+            #     db.mutation_query(write_query, (message.author.id, 0, 0))
 
 ###########################
 # Function: on_message_edit
@@ -441,6 +474,47 @@ async def get_rank(ctx, member_id=None):
             await ctx.channel.send(file=file)
         except Exception as e:
             await ctx.channel.send(f"No {member_id} in the database")
+
+####get leaderboard####
+@bot.command(name='leaderboard', help='Display leaderboard')
+async def display_leaderboard(ctx):
+    try:
+        ##conn = sqlite3.connect('C:\\Users\\vaivi\\CSC-510-Project2-TeachersPetBotv2.0\\db.sqlite')
+        ##cursor = conn.cursor()
+
+        #cursor.execute("SELECT * FROM rank ORDER BY level DESC, experience DESC LIMIT 10")
+        # rows = cursor.fetchall()
+        query = "SELECT * FROM rank ORDER BY level DESC, experience DESC LIMIT 10"
+        result = db.select_query(query, (ctx.author.id,))
+        rows = result.fetchall()
+
+        if not rows:
+            await ctx.send("No data found in the 'rank' table.")
+        else:
+            users = []
+            for index, row in enumerate(rows, start=1):
+                user_id = row[0]
+                user = await bot.fetch_user(user_id)
+                username = user.name if user else "Unknown User"
+                user_data = {
+                    'name': username,
+                    'xp': row[1],
+                    'level': row[2],
+                    'image_url': user.avatar.url if user.avatar else user.default_avatar.url,
+                }
+                users.append(user_data)
+            leaderboard_image = await draw_leaderboard(users)
+            file = discord.File(leaderboard_image, filename="leaderboard.png")
+            await ctx.send(file=file)
+        #
+        # cursor.close()
+        # conn.close()
+
+    except sqlite3.Error as e:
+        await ctx.send(f"SQLite error: {e}")
+    except Exception as e:
+        await ctx.send(f"An error occurred: {e}")
+
 ###########################
 # Function: get_instructor
 # Description: Command used to give Instructor role out by instructors
