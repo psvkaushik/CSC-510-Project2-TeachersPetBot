@@ -1,4 +1,5 @@
-## Installation Guide  
+## Installation Guide
+
 Make sure you have setup the [bot](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/blob/main/docs/Bot_Creation.md)
 
 1. First clone repository from [here](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)
