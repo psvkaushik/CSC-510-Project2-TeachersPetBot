@@ -11,13 +11,15 @@ The following is a set of guidelines for contributing to TeachersPetBot. These a
 [I don't want to read this whole thing, I just have a question!!!](#i-dont-want-to-read-this-whole-thing-i-just-have-a-question)
 
 [How Can I Contribute?](#how-can-i-contribute)
-  * [Reporting Bugs](#reporting-bugs)
-  * [Pull Requests](#pull-requests)
+
+- [Reporting Bugs](#reporting-bugs)
+- [Pull Requests](#pull-requests)
 
 [Styleguides](#styleguides)
-  * [Git branch naming format](#python-styleguide)
-  * [Git commit messages](#python-styleguide)
-  * [Python Styleguide](#python-styleguide)
+
+- [Git branch naming format](#python-styleguide)
+- [Git commit messages](#python-styleguide)
+- [Python Styleguide](#python-styleguide)
 
 [References](#References)
 
@@ -28,13 +30,14 @@ This project and everyone participating in it is governed by the [TeachersPetBot
 ## I don't want to read this whole thing I just have a question!!!
 
 Reach out to one of the main contributors on Discord using their IDs:
-* Chandrahas Reddy Mandapati: Chandrahas_Reddy_Mandapati#9201
-* Harini Bharata: Harini Bharata#7221
-* Sri Pallavi Damuluri : Sri Pallavi#8748
-* Niraj Lavani: Benpoindexter#4486
-* Sandesh Aladhalli Shivarudre Gowda: sandesh#1990
 
-*Note: Due to the dynamic nature of Discord IDs, these may change without prior notice on this page.*
+- Chandrahas Reddy Mandapati: Chandrahas_Reddy_Mandapati#9201
+- Harini Bharata: Harini Bharata#7221
+- Sri Pallavi Damuluri : Sri Pallavi#8748
+- Niraj Lavani: Benpoindexter#4486
+- Sandesh Aladhalli Shivarudre Gowda: sandesh#1990
+
+_Note: Due to the dynamic nature of Discord IDs, these may change without prior notice on this page._
 
 We do not have an official message board at this time, however, we plan to have one if it will help future contributors!
 
@@ -50,19 +53,18 @@ Bugs are tracked as [GitHub issues](https://guides.github.com/features/issues/).
 
 Explain the problem and include additional details to help maintainers reproduce the problem:
 
-* **Use a clear and descriptive title** for the issue to identify the problem.
-* **Describe the exact steps which reproduce the problem** in as many details as possible.
-* **Provide specific examples to demonstrate the steps**.
-* **Describe the behavior you observed after following the steps** and point out what exactly is the problem with that behavior.
-* **Explain which behavior you expected to see instead and why.**
+- **Use a clear and descriptive title** for the issue to identify the problem.
+- **Describe the exact steps which reproduce the problem** in as many details as possible.
+- **Provide specific examples to demonstrate the steps**.
+- **Describe the behavior you observed after following the steps** and point out what exactly is the problem with that behavior.
+- **Explain which behavior you expected to see instead and why.**
 
 #### Start Your Contribution
 
 `beginner` and `help-wanted` issues can help you get started to contribute your first contribution:
 
-* [Beginner issues][beginner] - issues which are pretty simple and should only require a few lines of code, and a couple of tests.
-* [Help wanted issues][help-wanted] - issues which should be a bit more involved than `beginner` issues.
-
+- [Beginner issues][beginner] - issues which are pretty simple and should only require a few lines of code, and a couple of tests.
+- [Help wanted issues][help-wanted] - issues which should be a bit more involved than `beginner` issues.
 
 ### Pull Requests
 
@@ -83,19 +85,19 @@ While the prerequisites above must be satisfied prior to having your pull reques
 
 #### Git Branch Naming format
 
-* The github branch names must be of the form `issue-{issue#}/{doc/task/bug}/description`.
-* Branch name must start by specifying the issue number and must specify the type of issue i.e documentation/task/bug and a small description of issue.
-* Below specified are few examples of how a branch name must be
-* If the issue raised is related to enhancement then branch name would be `issue-39/task/email_attachment`.
-* If the issue raised id related to a bug then branch name would be `issue-39/bug/email_validation`.
+- The github branch names must be of the form `issue-{issue#}/{doc/task/bug}/description`.
+- Branch name must start by specifying the issue number and must specify the type of issue i.e documentation/task/bug and a small description of issue.
+- Below specified are few examples of how a branch name must be
+- If the issue raised is related to enhancement then branch name would be `issue-39/task/email_attachment`.
+- If the issue raised id related to a bug then branch name would be `issue-39/bug/email_validation`.
 
 #### Git Commit Messages
 
-* Use the present tense ("Add feature" not "Added feature")
-* Use the imperative mood ("Move cursor to..." not "Moves cursor to...")
-* Limit the first line to 72 characters or less
-* Reference issues and pull requests liberally after the first line
-* When only changing documentation, include `[ci skip]` in the commit title
+- Use the present tense ("Add feature" not "Added feature")
+- Use the imperative mood ("Move cursor to..." not "Moves cursor to...")
+- Limit the first line to 72 characters or less
+- Reference issues and pull requests liberally after the first line
+- When only changing documentation, include `[ci skip]` in the commit title
 
 ### Python Styleguide
 
@@ -105,5 +107,6 @@ All Python code is linted with Pylint. Ensure that before you commit any changes
 `pip install pylint`
 
 ## References
+
 [transcriptor](https://github.com/secheaper/transcriptor/blob/main/CONTRIBUTING.md#start-your-contribution)
-[Atom Code of Conduct](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#code-of-conduct)*
+[Atom Code of Conduct](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#code-of-conduct)\*

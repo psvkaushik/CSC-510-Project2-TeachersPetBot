@@ -1,16 +1,20 @@
 # About !expansion_Welcome Message
+
 This feature ensures that every new member is greeted with a comprehensive welcome message, including all the important links.
 
 # Location of Code
+
 The code that implements the above mentioned gits functionality is located [here](https://github.com/tanmaypardeshi/CSC-510-Project2-TeachersPetBot/src/bot.py).
 
 # Code Description
+
 ## Functions
 
--  def on_member_join(member):
-is the start of a function in a Discord bot. It's an event handler that gets triggered when a new member joins a server, allowing you to specify actions the bot should take in response, such as sending a welcome message or performing other tasks related to the new member.
+- def on_member_join(member):
+  is the start of a function in a Discord bot. It's an event handler that gets triggered when a new member joins a server, allowing you to specify actions the bot should take in response, such as sending a welcome message or performing other tasks related to the new member.
 
 # How to run it? (Small Example)
+
 When a new member joins our server, they'll receive a warm welcome along with a collection of important links, enhancing their user experience and simplifying their journey.
 
 ### Discord Bot Welcome Message and Important Links

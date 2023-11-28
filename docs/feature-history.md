@@ -6,16 +6,17 @@
 
 When Teacher's Pet has been added to a new server as a bot, it will do the following:
 
-* Create a new role called Instructor with Administrative permissions if one does not already exist
-* Add the owner of the guild to the Instructor role
-* Create a #q-and-a channel if one doesn't already exist
-* Create a #calendar channel if one doesn't already exist
+- Create a new role called Instructor with Administrative permissions if one does not already exist
+- Add the owner of the guild to the Instructor role
+- Create a #q-and-a channel if one doesn't already exist
+- Create a #calendar channel if one doesn't already exist
 
 In addition to this auto-set up, there is also a command which allows a user with the Instructor role to give the same role to another user. This command will only work for users with the Instructor role already (for example, the guild owner).
 
 ![alt text](https://github.com/Ashwinshankar98/TeachersPetBot/blob/main/images/bot_join.png)
 
 ### Q&A
+
 The Q&A functionality allow students to ask and answer questions anonymously. The questions are numbered and when answers are sent, they are combined with the question so they can be easily found. Answers are also marked with `Student Ans` and `Instructor Ans` to distinguish between the sources.  
 To ask a question, type `!ask "Question"` in the #q-and-a channel. Example: `!ask "When is the midterm?"`.  
 ![image](https://user-images.githubusercontent.com/32313919/135383816-430792aa-b8c3-4d6b-8176-1621293d089e.png)  
@@ -26,6 +27,7 @@ Instructor answer:
 ![image](https://user-images.githubusercontent.com/32313919/135383932-551850ef-6f6c-4349-b3a4-d36ce583de14.png)
 
 ### Events/Calendar
+
 Events are items relevant to a class that are time-sensitive. Currently, the types of events include office hours, exams, and assignments. Events in a class are kept track of, and assignments/exams are displayed in a calendar for students and instructors to see.
 
 Events can be created by instructors. Creation of an event can be initiated in the private `instructor-commands` channel with the `!create` command. The bot will ask the instructor about various details for the event. Once the event is created, it should exist persistently within the system and will be added to the event list.
@@ -35,11 +37,13 @@ The calendar is updated at the creation of any new event that gets displayed on 
 ![image](https://github.com/Ashwinshankar98/TeachersPetBot/blob/main/images/calendar.png)
 
 ### Office Hours
+
 The bot contains functionality for handling TA office hours. After a TA office hour event is added and it is time for a TA's office hour to open, the bot will automatically create office hour channels in the server, allowing students to enter the office hour queue and instructors to help students based on the queue. Once the closing time for the office hour is reached, the channels related to the TA's office hour are automatically deleted.
 
 ![image](https://github.com/Ashwinshankar98/TeachersPetBot/blob/main/images/oh_channels.png)
 
 ##### Entering an office hour (as a student)
+
 Students may wish to receive individual help from a TA or they may want to join other students for help as a group (when they need help with a group project, etc); TeachersPetBot supports both of these use cases. A student may enter the queue as an individual using the `!oh enter` command within the text channel for an ongoing office hour. Upon doing so, a new group will be created and the student will become the sole member of that group. Student may enter existing groups by inputting `!oh enter <group_id>`, where `group_id` is the ID of the group the student wishes to join (group IDs will be displayed in the queue). Once it is an individual's (or group's) turn to be helped by the instructor, all members of the group will be invited into a voice channel where they will be able to talk with the TA.
 
 Upon entering this command in an office hour channel:
@@ -59,6 +63,7 @@ The queue will look like this:
 ![image](https://github.com/Ashwinshankar98/TeachersPetBot/blob/main/images/oh_group.png)
 
 ##### Exiting the office hour queue (as a student)
+
 A student may wish to exit the office hour queue for whatever reason; they may do so by typing `!oh exit` in the channel they are in the queue for.
 
 If a student exists in the queue:
@@ -74,6 +79,7 @@ The student will be wiped from the queue:
 ![image](https://github.com/Ashwinshankar98/TeachersPetBot/blob/main/images/oh_empty.png)
 
 ##### Traversing the queue (as an instructor)
+
 Once the instructor is ready to help the next student in the queue, they may enter `!oh next` in the office hour text channel. Upon doing so, DMs will be sent to all group members next in the queue notifying them that it is their turn, and they will be able to enter the office hour voice channel.
 
 If a student exists in the queue:
@@ -88,8 +94,7 @@ The student will be invited to the instructor's voice channel and the queue will
 
 ![image](https://github.com/Ashwinshankar98/TeachersPetBot/blob/main/images/oh_empty.png)
 
-
-### Profanity Censoring 
+### Profanity Censoring
 
 Using the Python package better-profanity, Teacher's Pet will catch profane words sent by members of the guild, delete the message, and re-send the exact message with the bad word(s) censored out. It will also catch profane words in messages which have been edited to incude bad words. This package supports censoring based off any non-alphabetical word dividers and swears with custom characters. NOTE: Currently the Bot does not censor swears which have had extra alphabetical characters added.
 
@@ -142,30 +147,31 @@ Help for a specific command:
 
 ![alt text](https://github.com/Ashwinshankar98/TeachersPetBot/blob/main/images/help_command.png)
 
+### Custom Profanity Censoring
 
-### Custom Profanity Censoring 
-Building upon the existing python package better-profanity, Teacher's pet, in addition to catching the existing profane words, will now give an option to declare custom words as profane. This adds them to the list of words to be filtered and any further use of said word would cause it to be censored. 
+Building upon the existing python package better-profanity, Teacher's pet, in addition to catching the existing profane words, will now give an option to declare custom words as profane. This adds them to the list of words to be filtered and any further use of said word would cause it to be censored.
 NOTE: Currently the Bot does not censor swears which have had extra alphabetical characters added.
-Working : 
+Working :
 Use the below syntax to include the custom word to the profane list:
 ![alt text](https://github.com/Ashwinshankar98/TeachersPetBot/blob/main/images/custom_profanity1.png)
 
-Whenever the above word is used the below flow is triggered : 
+Whenever the above word is used the below flow is triggered :
 ![alt text](https://github.com/Ashwinshankar98/TeachersPetBot/blob/main/images/custom_profanity2.png)
 
 ![alt text](https://github.com/Ashwinshankar98/TeachersPetBot/blob/main/images/custom_profanity3.png)
 
-
 ### Detecting Close Calls (Upcoming Assignments and Exams)
-This task runs in the background, once a day it checks if there are any assignments and exams coming up and reminds students. It works as follows : 
+
+This task runs in the background, once a day it checks if there are any assignments and exams coming up and reminds students. It works as follows :
 
 ![alt text](https://github.com/Ashwinshankar98/TeachersPetBot/blob/main/images/close_calls2.png)
 
-Whenever there is nothing to remind : 
+Whenever there is nothing to remind :
 
 ![alt text](https://github.com/Ashwinshankar98/TeachersPetBot/blob/main/images/close_calls1.png)
 
 ### Poll Command
+
 This command allows the Instructors to create a custom poll for the class. The command takes the following as inputs - Duration of the poll, Topic on focus, Options . Once the poll duration is complete the the command ends and displays the result of the poll. Note: A student can only vote for single option.<br />
 Example: `!poll 2 "Topic for Tmrw's class" Physics chemistry biology maths`
 
@@ -174,11 +180,13 @@ Example: `!poll 2 "Topic for Tmrw's class" Physics chemistry biology maths`
 ### Utility Commands
 
 #### Ping Command
-Since the bot is hosted on cloud ( In this case Heroku ). Its crucial to know the latency of the bot. This command  `!ping` returns the ping and the corresponding response time.
+
+Since the bot is hosted on cloud ( In this case Heroku ). Its crucial to know the latency of the bot. This command `!ping` returns the ping and the corresponding response time.
 
 ![alt text](https://github.com/Ashwinshankar98/TeachersPetBot/blob/main/images/ping_command.png)
 
 #### Status Command
+
 For the purpose of Debugging and maintaining the bot `!stats` command has been added to keep track of CPU usage, Bot up time, Bot version, No. of users and Memory usage.
 
 ![alt text](https://github.com/Ashwinshankar98/TeachersPetBot/blob/main/images/stats_command.png)
@@ -216,7 +224,7 @@ This usecase was based on regrade request submission for CSE 510 SE FALL21 mid e
 <!-- Need to update this -->
 <h4>Link Saving</h4>
 
-This feature is helpful to save all the messages which contain important URLs. we have built a user command "!send_links"  This command lets users access all messages which contain URLs. The messages Containing URLs are automatically get appended in a file and the file is attached when the "!send_links" command is input.
+This feature is helpful to save all the messages which contain important URLs. we have built a user command "!send_links" This command lets users access all messages which contain URLs. The messages Containing URLs are automatically get appended in a file and the file is attached when the "!send_links" command is input.
 
 <p align="left"><img width=65% src="https://github.com/chandur626/TeachersPetBot/blob/update-readme/docs/media/link-saving.gif"></p>
 
@@ -229,7 +237,7 @@ This feature allows instructors or teaching assistants to create a project event
 
 <!-- Need to update this -->
 <h4>Spam Detection</h4>
-This feature is used to detect spam in message channels. When a user tries to send too many messages in the channel, it gives a warning. This is useful when multiple users are trying to send mutiple messages. The warning lets the student know that they have sent too many messages. 
+This feature is used to detect spam in message channels. When a user tries to send too many messages in the channel, it gives a warning. This is useful when multiple users are trying to send mutiple messages. The warning lets the student know that they have sent too many messages.
 
 <p align="left"><img width=65% src="https://github.com/chandur626/TeachersPetBot/blob/update-readme/docs/media/Spam-Detection.gif"></p>
 
@@ -243,10 +251,11 @@ Google Bard can answer your questions, generate text, translate languages, and w
 To use this feature, simply type !Aichat in any channel. Bard will then start a chat session with you. You can type anything you want,
 <p align="left"><img width=65% src="https://github.com/tanmaypardeshi/CSC-510-Project2-TeachersPetBot/assets/102000543/fe0a0388-e95e-4c42-9b8b-18d2b26ffb9c"></p>
 
-With this feature 
-  - we Provide users with a fun and engaging way to interact with the bot.
-  - Help them learn new things and get answers to their questions.
-  - Generate creative content.
+With this feature
+
+- we Provide users with a fun and engaging way to interact with the bot.
+- Help them learn new things and get answers to their questions.
+- Generate creative content.
 
 <p align="left"><img width=65% src="https://github.com/tanmaypardeshi/CSC-510-Project2-TeachersPetBot/assets/102000543/65f3bf75-bdf8-4784-addd-5e0c9d0c603d"></p>
 Tpye exit to exit from the AI chat mode.

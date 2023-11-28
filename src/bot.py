@@ -182,7 +182,7 @@ async def on_ready():
     for member in general_members:
         blocked = False
         if member.id not in instructor_ids:
-            with open("blocked_user.txt", "r+", encoding='utf-8') as f:
+            with open("blocked_user.txt", "a+", encoding='utf-8') as f:
                 for line in f:
                     if line.strip("\n").split(" ")[0] == str(member.id):
                         await member.kick()
