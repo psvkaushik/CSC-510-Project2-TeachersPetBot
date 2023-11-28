@@ -19,7 +19,7 @@ The code that implements the above mentioned functionality is located [here](htt
 - profanity_penalize(author_id) <br>
   This function takes a message and determines whether the author who sent that message is spamming.
 
-- handle_profanity(message, ctx, guild_id)
+- handle_profanity(message, ctx, guild_id) <br>
   This function handles the event of a profanity.
 
 # How to run it? (Small Example)
