@@ -22,4 +22,3 @@ Enter space-separated: "!penalize <student_username> <xp_points>
 
 Successful execution looks as below:  
 <img width="405" alt="image" src="https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/assets/144864099/8566dcb5-f546-437a-83b7-4c4cb6060f20">
-
