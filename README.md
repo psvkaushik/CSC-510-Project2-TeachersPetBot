@@ -219,7 +219,7 @@ This bot has endless possibilities for functionality. Features that we are inter
 - [ ] Funnel the AI chat responses to a limited set(so AI only answers questions an instructor wants them to answer) (next 5 months)
 - [ ] Upgrade to a better chatbot API that is free (next 6 months)
 
-  <hr />
+<hr />
 
 <a name="contribute"></a>
 
