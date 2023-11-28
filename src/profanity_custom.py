@@ -140,18 +140,27 @@ def init(bot):
 #      - guild_id: the id of the guild we are in
 # Outputs: None
 ###########################
-def profanity_penalize(author_id):
-    id_query = f"SELECT * FROM rank where user_id=?"
+def profanity_penalize(author_id, table='rank'):
+    id_query = f"SELECT * FROM {table} where user_id=?"
     result = db.select_query(id_query, (author_id,))
     result = result.fetchone()
+
     if result[1] >= 20:
         update_query = f"UPDATE rank SET experience=? WHERE user_id=?"
         db.mutation_query(update_query, (result[1]-10, author_id))
     elif result[1] < 20 and result[2] >0:
         update_query = f"UPDATE rank SET experience=?, level=?  WHERE user_id=?"
         db.mutation_query(update_query, (80+result[1], result[2]-1, author_id))
+
+    if result[1] >= 10:
+        update_query = f"UPDATE {table} SET experience=? WHERE user_id=?"
+        db.mutation_query(update_query, (result[1]-10, author_id))
+    elif result[1] < 10 and result[2] >0:
+        update_query = f"UPDATE {table} SET experience=?, level=?  WHERE user_id=?"
+        db.mutation_query(update_query, (90+result[1], result[2]-1, author_id))
+
     else:
-        update_query = f"UPDATE rank SET experience=? WHERE user_id=?"
+        update_query = f"UPDATE {table} SET experience=? WHERE user_id=?"
         db.mutation_query(update_query, (0, author_id))
 
 

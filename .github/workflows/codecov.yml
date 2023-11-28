@@ -1,27 +1,30 @@
-name: Running Code Coverage
+name: Test TeachersPetBot and Upload CodeCoverage
+
 on:
   push:
     branches:
       - main
+      - pylint
   pull_request:
     branches:
       - main
+      - pylint
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
+
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-    - name: Install Python 3.10
-      uses: actions/setup-python@v1
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v3
       with:
-        python-version: 3.10.13
+        python-version: "3.9"
     - name: Install dependencies
       run: |
-        pip install pytest-cov
+        python -m pip install --upgrade pip
         pip install -r requirements.txt
-        echo requirements installed
     - name: Create env file
       run: |
         cat << EOF > .env
@@ -31,12 +34,13 @@ jobs:
         DICORD_BOT_NAME=${{ secrets.DICORD_BOT_NAME }}
         TEST_BOT_APP_ID=${{ secrets.TEST_BOT_APP_ID }}
         TEST_BOT_NAME=${{ secrets.TEST_BOT_NAME }}
+        VERSION=${{ secrets.VERSION }}
         EOF
-    - name: Run the tests
+    - name: Run tests and collect coverage
       run: |
-          pytest --cov=src test/tests.py
-
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v1
-      with:
-        token: ${{ secrets.CODECOV_TOKEN }}
+        (sleep 2; python3 -m pytest test/tests.py) & (coverage run --source=./src -m pytest src/bot.py )
+        coverage xml
+    - name: Upload coverage reports to Codecov
+      uses: codecov/codecov-action@v3
+      env:
+        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
