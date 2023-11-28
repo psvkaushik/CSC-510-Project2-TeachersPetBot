@@ -3,17 +3,20 @@
 We have implemented following functionalites across multiple platforms and tested. Following are the case studies:
 
 1. Custom profanity settings
-   Whenever a user enters an nsfw message, the user can be warned, timed-out and even blocked from the server as per the settings of the instructor or the default
-   settings which is warning, followed by timeout followed by ban from server
+   Users entering NSFW messages can be warned, timed out, or banned based on instructor-defined or default settings—warning, timeout, followed by server ban.
+
+   ![set_profanity_settings_gif](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/assets/22112102/2fcb7cf5-98c1-46d9-9581-3037cfda9950)
 
 2. Persistent Block from server
-   If a user is banned and kicked out from the server they remain blocked, if they try to join the server when the bot is not running, it will kick them out when
-   the bot starts up. If they try to join again when the bot is running, it will not let them join the server
+   Banned users remain blocked; when the bot restarts, attempting reentry leads to an automatic kick if the bot is offline. Online attempts are barred.
+
+   ![blocked_user_gif](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/assets/22112102/b9860091-fafd-4515-958c-835582126bdd)
 
 3. Instructor Mentions Channel  
-   If any user tags any instructor or refer instructors, the Question will pop up in the instructor QNA channel and once they reply to the message in that  
-   channel it will be posted back to the main channel. It will help ensure that no question goes unnoticed as all the questions are available to see at one glance  
-   with no clutter in a separate channel
+   Tagging instructors results in questions being posted in the instructor QNA channel; replies are posted back to the main channel, ensuring no mention goes 
+   unnoticed.
+
+   ![instructor_mention_gif](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/assets/22112102/e54c2fc2-67e2-4d81-83f3-7061e5d0120a)
 
 4. DB initialization
    Proper integration with databases ensures new user entry upon bot restart; detects and creates missing user database entries on server join.
@@ -46,4 +49,4 @@ We have implemented following functionalites across multiple platforms and teste
 10. !unblock_user
     Instructors gain authority to unblock users by usernames, allowing banned individuals to rejoin.
 
-![unblock_user_gif](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/assets/22112102/996ac853-8eb4-45aa-a3a9-f46b39cdd7ab)
+    ![unblock_user_gif](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/assets/22112102/996ac853-8eb4-45aa-a3a9-f46b39cdd7ab)
