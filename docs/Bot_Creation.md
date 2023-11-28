@@ -1,5 +1,6 @@
-## Create a Discord Bot  
-To create a Discord Bot, you must:  
+## Create a Discord Bot
+
+To create a Discord Bot, you must:
 
 - have a [Discord Account](https://discord.com/login)
 - have a Discord server for the bot
@@ -17,4 +18,4 @@ To create a Discord Bot, you must:
   VERSION={custom bot version}
   ```
 
-NOTE: Run the bot before inviting it to your server in order for auto-initiate commands to run  
+NOTE: Run the bot before inviting it to your server in order for auto-initiate commands to run
