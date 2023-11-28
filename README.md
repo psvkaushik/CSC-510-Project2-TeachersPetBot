@@ -41,7 +41,7 @@
 <a name="desc"></a>
 Click Below to Watch The Video!
 
-https://www.youtube.com/watch?v=QXUmwBD5vks  
+https://www.youtube.com/watch?v=QXUmwBD5vks
 
 <h2>Software Engineering Project for CSC 510 : Phase V</h2>
 
