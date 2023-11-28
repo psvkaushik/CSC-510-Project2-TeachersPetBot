@@ -52,11 +52,11 @@ For 5.0, we created new tools for instructors and students to use to improve cou
 
 <a name="features"></a>
 
-## New Features  
-[Click here to see the latest additions in detail](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/blob/main/docs/Improvements_Iteration4_vs_Iteration5.md)  
+## New Features
+
+[Click here to see the latest additions in detail](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/blob/main/docs/Improvements_Iteration4_vs_Iteration5.md)
 
 [Click here to see the features of iterations I, II, III, and IV.](docs/feature-history.md)
-
 
 1. **Custom profanity settings**  
    Users entering NSFW messages can be warned, timed-out, or banned based on instructor-defined or default settings—warning, timeout, followed by server ban
