@@ -30,7 +30,7 @@ async def test_question(testing_bot):
     qna_channel = discord.utils.get(testing_bot.get_all_channels(), name='q-and-a')
     await qna_channel.send('!ask Hello')
 
-    sleep(.5)
+    sleep(2)
     # messages = await qna_channel.history(limit=1).flatten() .flatten() #no longer works on this
     messages = [message async for message in qna_channel.history(limit=1)]
     print(messages)

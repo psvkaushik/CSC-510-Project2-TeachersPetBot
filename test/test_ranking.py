@@ -13,7 +13,7 @@ from utils import wait_for_msg
 # ###########################
 async def test(testing_bot):
      general_channel = discord.utils.get(testing_bot.get_all_channels(), name='general')
-    #  await test_rank_for_same_user(testing_bot, general_channel)
+     await test_rank_for_same_user(testing_bot, general_channel)
      await test_rank_for_other_user(testing_bot, general_channel)
      await test_rank_for_other_user_who_does_not_exist(testing_bot, general_channel)
 
@@ -35,7 +35,7 @@ async def test_rank_for_same_user(testing_bot, general_channel):
 async def test_rank_for_other_user(testing_bot, general_channel):
     member = None
     for member1 in testing_bot.get_all_members():
-        if member1.name == 'cute_piglet_26939': # enter the username of a member
+        if member1.name == 'testerbotse23': # enter the username of a member
             member = member1
             break
     await general_channel.send(f'!rank {member.mention}')

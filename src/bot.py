@@ -74,6 +74,8 @@ intents=discord.Intents.all()
 bot = commands.Bot(command_prefix='!', description='This is TeachersPetBot!', intents=intents)
 bot.remove_command("help")
 
+cwd = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(cwd, '../data/charts/chartstorage.json')
 ###########################
 # Function: on_ready
 # Description: run on bot start-up
@@ -355,16 +357,14 @@ async def on_message(message):
             instructor = True
 
     # allow messages from test bot
-    print('message.author.bot: ', message.author.bot)
-    print('message.author.id: ', message.author.id)
-    print('Test_bot_application_ID: ', Test_bot_application_ID)
+    # print('message.author.bot: ', message.author.bot)
+    # print('message.author.id: ', message.author.id)
+    # print('Test_bot_application_ID: ', Test_bot_application_ID)
     if message.author.bot and message.author.id == Test_bot_application_ID:
-        print('entered ctx by testbox')
         ctx = await bot.get_context(message)
         await bot.invoke(ctx)
-        print("got the context.")
     #print(f"Meessage author is {message.author.name} and type is {type(message.author)}")
-    if message.author.name == "bot69":
+    if message.author == bot.user:
         return
 
     if not instructor:
@@ -906,7 +906,7 @@ async def custom_chart(ctx, title: str, chart: str, *args):
         print("Make sure every data-label singularly matches a datapoint (A B C 1 2 3")
         return
     data_count = int(len(args) / 2)
-    with open('../data/charts/chartstorage.json', 'r', encoding='utf-8') as file:
+    with open(file_path, 'r', encoding='utf-8') as file:
         storage = json.load(file)
     labels_list = []
     dataset_list = []
@@ -934,7 +934,7 @@ async def custom_chart(ctx, title: str, chart: str, *args):
     shortener = pyshorteners.Shortener()
     shortened_link = shortener.tinyurl.short(link)
     await update_chart(storage, title, shortened_link)
-    with open('../data/charts/chartstorage.json', 'w', encoding='utf-8') as file:
+    with open(file_path, 'w', encoding='utf-8') as file:
         json.dump(storage, file, indent=4)
     await ctx.send("Here is your chart:")
     await ctx.send(f"{shortened_link}")
@@ -948,7 +948,7 @@ async def checkchart(ctx, name: str):
         Returns:
             returns the custom chart in the chat box if it exists
     """
-    with open('../data/charts/chartstorage.json', 'r', encoding='utf-8') as file:
+    with open(file_path, 'r', encoding='utf-8') as file:
         storage = json.load(file)
         if not storage or storage[name] == '':
             await ctx.send("No chart with that name!")
@@ -1175,7 +1175,7 @@ async def end_tests(ctx):
         return
     await office_hours.close_oh(ctx.guild, 'test')
     # TODO maybe use ctx.bot.logout()
-    await ctx.bot.close()
+    #await ctx.bot.close()
     # quit(0)
 
 ###########################
