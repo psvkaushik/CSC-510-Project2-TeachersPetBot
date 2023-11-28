@@ -1,6 +1,6 @@
 _This File describes each source file and details of all classes, methods and functions in each file_
 
-### <u> bot.py </u>
+### <u> [bot.py](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/blob/main/src/bot.py) </u>
 
 Iteration 5
 
@@ -14,7 +14,7 @@ Iteration 5
 
 3. **_Function_**:
 
-### <u> db.py </u>
+### <u> [db.py](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/blob/main/src/db.py) </u>
 
 1. **_Function_**: connect
 
@@ -28,7 +28,7 @@ Iteration 5
 
    **_Description_**: Called from bot.py for mutation on the database
 
-### <u> profanity_help.py </u>
+### <u> [profanity_help.py](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/blob/main/src/profanity_help.py) </u>
 
 1. **_Function_**: check_profanity
 
@@ -38,7 +38,7 @@ Iteration 5
 
    **_Description_**: takes action on the profanity by censoring it
 
-### <u> spam.py </u>
+### <u> [spam.py](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/blob/main/src/spam.py) </u>
 
 1. **_Function_**: set
 
@@ -268,7 +268,7 @@ Iteration 5
 
     **_Description_**: Run the bot
 
-### <u> cal.py </u>
+### <u> [cal.py](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/blob/main/src/cal.py) </u>
 
 **\***Description**\*:** What this does
 
@@ -302,7 +302,7 @@ Iteration 5
 
    - channel : the channel 'course-calendar'
 
-### <u> event_creation.py </u>
+### <u> [event_creation.py](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/blob/main/src/event_creation.py) </u>
 
 **\***Description**\*:** Functionality for creating new events
 
@@ -328,7 +328,7 @@ Iteration 5
 
    **_Outputs_**: None
 
-### <u> office_hours.py </u>
+### <u> [office_hours.py](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/blob/main/src/office_hours.py) </u>
 
 **_Description_**: functionality related to administering office hours
 
@@ -421,7 +421,7 @@ Iteration 5
 
    - b: discord bot
 
-### <u> profanity.py </u>
+### <u> [profanity_help.py](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/blob/main/src/profanity_help.py) </u>
 
 **\***Description**\*:** What this does
 
@@ -441,7 +441,7 @@ Iteration 5
 
    - msg: message from user
 
-### <u> qna.py </u>
+### <u> [qna.py](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/blob/main/src/qna.py) </u>
 
 **\***Description**\*:** Implements Q and A functionality
 
@@ -483,7 +483,7 @@ Iteration 5
      **_Outputs_**:
    - User answer added to question post
 
-### <u> attendance.py </u>
+### <u> [attendance.py](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/blob/main/src/attendance.py) </u>
 
 **\***Description**\*:** Attendance functionality
 
@@ -498,7 +498,7 @@ Iteration 5
 
    **_Outputs_**: None
 
-### <u> help_command.py </u>
+### <u> [help_command.py](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/blob/main/src/help_command.py) </u>
 
 **\***Description**\*:** help command functionality
 
