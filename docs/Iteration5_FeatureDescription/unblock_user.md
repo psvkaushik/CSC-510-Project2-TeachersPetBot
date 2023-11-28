@@ -12,7 +12,7 @@ The code that implements the above mentioned functionality is located [here](htt
 
 - unblock_user(ctx) <br>
   This function takes the input as a username and removes it from the blocked user list.
-  
+
 # How to run it? (Small Example)
 
 Enter space-separated: "!unblock_user
