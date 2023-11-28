@@ -13,7 +13,7 @@
 [![DOI](https://zenodo.org/badge/718312021.svg)](https://zenodo.org/doi/10.5281/zenodo.10211826)
 [![](https://tokei.rs/b1/github/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0)](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0).
 ![Github pull requests](https://img.shields.io/github/issues-pr/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0)
-[![GitHub stars](https://badgen.net/github/stars/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0)](https://badgen.net/github/stars/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0)
+![Github stars](https://img.shields.io/github/stars/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0)
 ![Respost - Write comment to new Issue event](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/actions/workflows/Respost.yml/badge.svg)
 ![version](https://img.shields.io/badge/version-2.1-blue)
 ![Close as a feature](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/actions/workflows/close_as_a_feature.yml/badge.svg)
