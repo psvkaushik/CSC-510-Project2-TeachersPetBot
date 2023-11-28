@@ -5,24 +5,23 @@
 <h2 align="center"> Streamline Your Class Discord</h2>
 
 ![Python](https://img.shields.io/badge/python-v3.7+-brightgreen.svg)
-![GitHub](https://img.shields.io/github/license/tanmaypardeshi/CSC-510-Project2-TeachersPetBot)
-![GitHub issues](https://img.shields.io/github/issues/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)
-![GitHub closed issues](https://img.shields.io/github/issues-closed/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)
-[![codecov](https://codecov.io/gh/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/graph/badge.svg?token=3QCL57IUZF)](https://codecov.io/gh/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)
-![GitHub](https://img.shields.io/github/license/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)
+![GitHub issues](https://img.shields.io/github/issues/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0)
+[![codecov](https://codecov.io/gh/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/graph/badge.svg?token=3QCL57IUZF)](https://codecov.io/gh/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0)
+![GitHub](https://img.shields.io/github/license/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0)
 [![DOI](https://zenodo.org/badge/718312021.svg)](https://zenodo.org/doi/10.5281/zenodo.10211826)
-[![](https://tokei.rs/b1/github/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0).
-![Github pull requests](https://img.shields.io/github/issues-pr/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)
-[![GitHub stars](https://badgen.net/github/stars/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)](https://badgen.net/github/stars/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)
-![Respost - Write comment to new Issue event](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/actions/workflows/Respost.yml/badge.svg)
+[![](https://tokei.rs/b1/github/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0)](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0).
+![Github pull requests](https://img.shields.io/github/issues-pr/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0)
+[![GitHub stars](https://badgen.net/github/stars/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0)](https://badgen.net/github/stars/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0)
+![Respost - Write comment to new Issue event](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/actions/workflows/Respost.yml/badge.svg)
 ![version](https://img.shields.io/badge/version-4.1-blue)
-![Greetings](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/actions/workflows/Greetings.yml/badge.svg)
-![Close as a feature](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/actions/workflows/close_as_a_feature.yml/badge.svg)
-![GitHub contributors](https://img.shields.io/github/contributors/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)
-[![Style Checker and Prettify Code](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/actions/workflows/Style_Checker_and_Prettify_Code.yml/badge.svg)](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/actions/workflows/Style_Checker_and_Prettify_Code.yml)
-[![Running Code Coverage](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/actions/workflows/codecov.yml/badge.svg)](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/actions/workflows/codecov.yml)
-![Pylint](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/actions/workflows/pylint.yml/badge.svg)
+![Greetings](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/actions/workflows/Greetings.yml/badge.svg)
+![Close as a feature](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/actions/workflows/close_as_a_feature.yml/badge.svg)
+![GitHub contributors](https://img.shields.io/github/contributors/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0)
+[![Style Checker and Prettify Code](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/actions/workflows/Style_Checker_and_Prettify_Code.yml/badge.svg)](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/actions/workflows/Style_Checker_and_Prettify_Code.yml)
+[![Running Code Coverage](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/actions/workflows/codecov.yml/badge.svg)](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/actions/workflows/codecov.yml)
+![Pylint](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/actions/workflows/pylint.yml/badge.svg)
 
 <!-- I am not sure about this parameter yet. Any idea what to do about this? -->
 <!-- ![GitHub deployments](https://img.shields.io/github/deployments/Ashwinshankar98/TeachersPetBot/discord-bot-phase2)<br/> -->
