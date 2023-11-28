@@ -181,11 +181,11 @@ To run tests on the Teacher's Pet, follow instructions in the [Installation and 
 
 This bot has endless possibilities for functionality. Features which we are interested in adding but did not have time for include but are not limited to:
 
-- [ ] Adding detailed error display integration to the bot (next 1 month)  
-- [ ] Add Tutor role (next 1 month)  
-- [ ] Refactor code to use cogs (next 2 month)  
-- [ ] Add a gibberish detector that deletes comments that are irrelevant to the class (next 3 month)  
-- [ ] Funnel the AI chat responses to a limited set(so AI only answers questions an instructor wants them to answer) (next 5 month)  
+- [ ] Adding detailed error display integration to the bot (next 1 month)
+- [ ] Add Tutor role (next 1 month)
+- [ ] Refactor code to use cogs (next 2 month)
+- [ ] Add a gibberish detector that deletes comments that are irrelevant to the class (next 3 month)
+- [ ] Funnel the AI chat responses to a limited set(so AI only answers questions an instructor wants them to answer) (next 5 month)
 - [ ] Upgrade to a better chatbot API that is free (next 6 month)
 
 ## ADD OUR FUTURE SCOPES
