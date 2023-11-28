@@ -97,14 +97,14 @@ For 5.0, we created new tools for instructors and students to use to improve cou
    Banned users remain blocked; when the bot restarts, attempting reentry leads to an automatic kick if the bot is offline. Online attempts are barred.
 
    ![blocked_user_gif](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/assets/22112102/b9860091-fafd-4515-958c-835582126bdd)
-   
-9. **!unblock_user**  
-    Instructors gain authority to unblock users by usernames, allowing banned individuals to rejoin.
 
-    ![unblock_user_gif](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/assets/22112102/996ac853-8eb4-45aa-a3a9-f46b39cdd7ab)
+9. **!unblock_user**  
+   Instructors gain authority to unblock users by usernames, allowing banned individuals to rejoin.
+
+   ![unblock_user_gif](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/assets/22112102/996ac853-8eb4-45aa-a3a9-f46b39cdd7ab)
 
 10. **DB initialization**
-   Proper integration with databases ensures new user entry upon bot restart; detects and creates missing user database entries on server join.
+    Proper integration with databases ensures new user entry upon bot restart; detects and creates missing user database entries on server join.
 
 <a name="instrun"></a>
 
