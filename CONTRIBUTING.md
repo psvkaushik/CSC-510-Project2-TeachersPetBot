@@ -29,13 +29,12 @@ This project and everyone participating in it is governed by the [TeachersPetBot
 
 ## I don't want to read this whole thing I just have a question!!!
 
-Reach out to one of the main contributors on Discord using their IDs:
+Reach out to one of the main contributors for Iteration-V on Discord using their IDs:
 
-- Chandrahas Reddy Mandapati: Chandrahas_Reddy_Mandapati#9201
-- Harini Bharata: Harini Bharata#7221
-- Sri Pallavi Damuluri : Sri Pallavi#8748
-- Niraj Lavani: Benpoindexter#4486
-- Sandesh Aladhalli Shivarudre Gowda: sandesh#1990
+- Ayush Agarwal: ayush_ai8
+- Vaishnavi Naik: Vaishnavi#0824
+- Kaushik Pillalamarri: denji0429
+- Surya Upadyayula: cute_piglet_26939
 
 _Note: Due to the dynamic nature of Discord IDs, these may change without prior notice on this page._
 
