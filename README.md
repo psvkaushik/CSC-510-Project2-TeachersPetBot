@@ -8,10 +8,6 @@
 ![GitHub](https://img.shields.io/github/license/tanmaypardeshi/CSC-510-Project2-TeachersPetBot)
 ![GitHub issues](https://img.shields.io/github/issues/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)
-![Lines of code](https://tokei.rs/b1/github/tanmaypardeshi/CSC-510-Project2-TeachersPetBot)
-[![codecov](https://codecov.io/gh/tanmaypardeshi/CSC-510-Project2-TeachersPetBot/branch/main/graph/badge.svg?token=QTKU51PZSO)](https://codecov.io/gh/tanmaypardeshi/CSC-510-Project2-TeachersPetBot)
-[![GitHub Workflow Status](https://github.com/tanmaypardeshi/CSC-510-Project2-TeachersPetBot/actions/workflows/test.yml/badge.svg)](https://github.com/tanmaypardeshi/CSC-510-Project2-TeachersPetBot/actions/workflows/test.yml)
-
 [![codecov](https://codecov.io/gh/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/graph/badge.svg?token=3QCL57IUZF)](https://codecov.io/gh/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)
 ![GitHub](https://img.shields.io/github/license/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)
 [![DOI](https://zenodo.org/badge/718312021.svg)](https://zenodo.org/doi/10.5281/zenodo.10211826)
