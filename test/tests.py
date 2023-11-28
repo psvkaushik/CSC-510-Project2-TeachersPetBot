@@ -37,6 +37,7 @@ async def run_tests():
         print('testing QNA\n----------')
         await test_qna.test(testing_bot, TEST_GUILD_ID)
     except AssertionError as ex:
+        exit_status = 1
         print('exception: ', type(ex).__name__ + ':', ex)
         print('--')
     
@@ -44,6 +45,7 @@ async def run_tests():
         print('testing office hours\n----------')
         await test_office_hours.test(testing_bot, TEST_GUILD_ID)
     except AssertionError as ex:
+        exit_status = 1
         print('exception: ', type(ex).__name__ + ':', ex)
         print('--')
 
@@ -51,6 +53,7 @@ async def run_tests():
         print('testing calendar\n----------')
         await test_calendar.test(testing_bot, TEST_GUILD_ID)
     except AssertionError as ex:
+        exit_status = 1
         print('exception: ', type(ex).__name__ + ':', ex)
         print('--')
     
@@ -58,6 +61,7 @@ async def run_tests():
         print('testing profanity\n----------')
         await test_profanity.test(testing_bot, TEST_GUILD_ID)
     except AssertionError as ex:
+        exit_status = 1
         print('exception: ', type(ex).__name__ + ':', ex)
         print('--')
 
@@ -65,6 +69,7 @@ async def run_tests():
         print('testing attendance\n----------')
         await test_attendance.test(testing_bot, TEST_GUILD_ID)
     except AssertionError as ex:
+        exit_status = 1
         print('exception: ', type(ex).__name__ + ':', ex)
         print('--')
 
@@ -72,6 +77,7 @@ async def run_tests():
         print('testing help\n----------')
         await test_help.test(testing_bot, TEST_GUILD_ID)
     except AssertionError as ex:
+        exit_status = 1
         print('exception: ', type(ex).__name__ + ':', ex)
         print('--')
 
@@ -79,6 +85,7 @@ async def run_tests():
         print('testing regrade\n----------')
         await test_regrade.test(testing_bot, TEST_GUILD_ID)
     except AssertionError as ex:
+        exit_status = 1
         print('exception: ', type(ex).__name__ + ':', ex)
         print('--')
 
@@ -86,6 +93,7 @@ async def run_tests():
         print('testing email address configuration\n----------')
         await test_email_address.test(testing_bot, TEST_GUILD_ID)
     except AssertionError as ex:
+        exit_status = 1
         print('exception: ', type(ex).__name__ + ':', ex)
         print('--')
 
@@ -93,6 +101,7 @@ async def run_tests():
         print('testing chart\n-----------')
         await test_chart.test(testing_bot, TEST_GUILD_ID)
     except AssertionError as ex:
+        exit_status = 1
         print('exception: ', type(ex).__name__ + ':', ex)
         print('--')
 
@@ -100,6 +109,7 @@ async def run_tests():
         print('testing spam\n----------')
         await test_spam.test(testing_bot, TEST_GUILD_ID)
     except AssertionError as ex:
+        exit_status = 1
         print('exception: ', type(ex).__name__ + ':', ex)
         print('--')
 
@@ -107,6 +117,7 @@ async def run_tests():
         print('testing rank card\n----------')
         await test_ranking.test(testing_bot)
     except AssertionError as ex:
+        exit_status = 1
         print('exception: ', type(ex).__name__ + ':', ex)
         print('--')
 

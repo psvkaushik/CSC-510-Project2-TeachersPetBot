@@ -92,7 +92,7 @@ async def wait_for_msg(testing_bot, channel, content):
 
 async def wait_for_channel_create(testing_bot, guild_id, name):
     try:
-        return await testing_bot.wait_for('guild_channel_create', timeout=2, check=lambda x: x.guild.id == guild_id and x.name == name)
+        return await testing_bot.wait_for('guild_channel_create', timeout=4, check=lambda x: x.guild.id == guild_id and x.name == name)
     except asyncio.TimeoutError:
         new_channel = next((ch for ch in testing_bot.get_guild(guild_id).text_channels if ch.name == name), None)
         if new_channel is None:
