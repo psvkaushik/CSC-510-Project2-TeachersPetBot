@@ -5,23 +5,23 @@
 <h2 align="center"> Streamline Your Class Discord</h2>
 
 ![Python](https://img.shields.io/badge/python-v3.7+-brightgreen.svg)
-![GitHub](https://img.shields.io/github/license/tanmaypardeshi/CSC-510-Project2-TeachersPetBot)
-![GitHub issues](https://img.shields.io/github/issues/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)
-![GitHub closed issues](https://img.shields.io/github/issues-closed/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)
-[![codecov](https://codecov.io/gh/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/graph/badge.svg?token=3QCL57IUZF)](https://codecov.io/gh/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)
-![GitHub](https://img.shields.io/github/license/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)
+![GitHub issues](https://img.shields.io/github/issues/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0)
+[![codecov](https://codecov.io/gh/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/graph/badge.svg?token=3QCL57IUZF)](https://codecov.io/gh/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0)
+![GitHub](https://img.shields.io/github/license/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0)
 [![DOI](https://zenodo.org/badge/718312021.svg)](https://zenodo.org/doi/10.5281/zenodo.10211826)
-[![](https://tokei.rs/b1/github/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0).
-![Github pull requests](https://img.shields.io/github/issues-pr/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)
-[![GitHub stars](https://badgen.net/github/stars/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)](https://badgen.net/github/stars/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)
-![Respost - Write comment to new Issue event](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/actions/workflows/Respost.yml/badge.svg)
+[![](https://tokei.rs/b1/github/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0)](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0).
+![Github pull requests](https://img.shields.io/github/issues-pr/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0)
+[![GitHub stars](https://badgen.net/github/stars/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0)](https://badgen.net/github/stars/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0)
+![Respost - Write comment to new Issue event](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/actions/workflows/Respost.yml/badge.svg)
 ![version](https://img.shields.io/badge/version-4.1-blue)
-![Greetings](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/actions/workflows/Greetings.yml/badge.svg)
-![Close as a feature](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/actions/workflows/close_as_a_feature.yml/badge.svg)
-![GitHub contributors](https://img.shields.io/github/contributors/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)
-[![Style Checker and Prettify Code](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/actions/workflows/Style_Checker_and_Prettify_Code.yml/badge.svg)](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/actions/workflows/Style_Checker_and_Prettify_Code.yml)
-[![Running Code Coverage](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/actions/workflows/codecov.yml/badge.svg)](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/actions/workflows/codecov.yml)
+![Greetings](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/actions/workflows/Greetings.yml/badge.svg)
+![Close as a feature](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/actions/workflows/close_as_a_feature.yml/badge.svg)
+![GitHub contributors](https://img.shields.io/github/contributors/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0)
+[![Style Checker and Prettify Code](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/actions/workflows/Style_Checker_and_Prettify_Code.yml/badge.svg)](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/actions/workflows/Style_Checker_and_Prettify_Code.yml)
+[![Running Code Coverage](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/actions/workflows/codecov.yml/badge.svg)](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/actions/workflows/codecov.yml)
+![Pylint](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/actions/workflows/pylint.yml/badge.svg)
 
 <!-- I am not sure about this parameter yet. Any idea what to do about this? -->
 <!-- ![GitHub deployments](https://img.shields.io/github/deployments/Ashwinshankar98/TeachersPetBot/discord-bot-phase2)<br/> -->
@@ -88,7 +88,7 @@ In addition to the packages from [requirements.txt](https://github.com/tanmaypar
 - [Python 3.9.7](https://www.python.org/downloads/)
 - [Sqlite](https://www.sqlite.org/download.html)
 
-To install and run Teacher's Pet, follow the instructions in the [Installation and Testing Guide](Installation.md).
+To install and run Teacher's Pet, follow the instructions in the [here](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/blob/main/docs/InstallationGuide.md)
 
 <a name="testing"></a>
 
@@ -181,28 +181,28 @@ To run tests on the Teacher's Pet, follow instructions in the [Installation and 
 
 This bot has endless possibilities for functionality. Features which we are interested in adding but did not have time for include but are not limited to:
 
-- Adding detailed error display integration to the bot
-- Add Tutor role
-- Add ways for users to lose exp in the rank feature(spamming etc)
-- Add commands so an instructor can customize how rank exp is awarded(what for and how much etc)
-- Refactor code to use cogs
-- Add a gibberish detector that deletes comments that are irrelevant to the class
-- Funnel the AI chat responses to a limited set(so AI only answers questions an instructor wants them to answer)
-- Upgrade to a better chatbot API that is free
+- [ ] Adding detailed error display integration to the bot (next 1 month)
+- [ ] Add Tutor role (next 1 month)
+- [ ] Refactor code to use cogs (next 2 month)
+- [ ] Add a gibberish detector that deletes comments that are irrelevant to the class (next 3 month)
+- [ ] Funnel the AI chat responses to a limited set(so AI only answers questions an instructor wants them to answer) (next 5 month)
+- [ ] Upgrade to a better chatbot API that is free (next 6 month)
 
-<hr />
+## ADD OUR FUTURE SCOPES
+
+  <hr />
 
 <a name="contribute"></a>
 
 <h2>How to Contribute? </h2>
 
-Check out our [CONTRIBUTING.md](https://github.com/tanmaypardeshi/CSC-510-Project2-TeachersPetBot/blob/main/CONTRIBUTING.md) for instructions on contributing to this repo and helping enhance this Discord Bot, as well as our [Code of Conduct](https://github.com/tanmaypardeshi/CSC-510-Project2-TeachersPetBot/blob/main/CODE_OF_CONDUCT.md) guidelines.
+Check out our [CONTRIBUTING.md](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/blob/main/CONTRIBUTING.md) for instructions on contributing to this repo and helping enhance this Discord Bot, as well as our [Code of Conduct](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/blob/main/CODE_OF_CONDUCT.md) guidelines.
 
 <a name="license"></a>
 
 <h2> License </h2>
 
-The project is licensed under the [MIT License](https://github.com/tanmaypardeshi/CSC-510-Project2-TeachersPetBot/blob/main/LICENSE).
+The project is licensed under the [MIT License](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/blob/main/LICENSE).
 
 <hr />
 
