@@ -10,3 +10,6 @@ Make sure you have setup the [bot]()
 5. Navigate into src directory and run following command  
    `python bot.py`
 6. Open discord into webrowser, your teacher's pet is ready for use
+
+
+## PUT EXAMPLES
