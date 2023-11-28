@@ -18,3 +18,4 @@ The code that implements the above mentioned functionality is located [here](htt
 Enter space-separated: "!leaderboard
 
 Successful execution looks as below:
+![image](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/assets/111774368/5c8c5c86-6930-4ac9-9417-f10a2ddd84cb)
