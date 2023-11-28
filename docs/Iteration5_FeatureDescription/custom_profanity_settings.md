@@ -1,6 +1,6 @@
 # About !set_profanity_settings
 
-This command lets instructors set custom profanity configurations. 
+This command lets instructors set custom profanity configurations.
 
 # Location of Code
 
@@ -28,4 +28,3 @@ Enter space-separated: "!set_profanity_settings"
 
 Successful execution looks as below:  
 <img width="822" alt="image" src="https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/assets/144864099/7adec811-7169-406d-9643-b62f6b92d402">
-
