@@ -13,20 +13,20 @@ Iteration 5
    **_Description_**: Command available to instructors to set spam settings.
 
 3. **_Function_**: set_profanity_settings
-   
+
    **_Description_**: Command available to instructors to set profanity settings.
-   
+
 4. **_Function_**: award
 
-    **_Description_**: Command available to instructors to award xp to students.
-   
-6. **_Function_**: penalize
+   **_Description_**: Command available to instructors to award xp to students.
 
-  **_Description_**: Command available to instructors to penalize students by reducing xp.
-  
-7. **_Function_**: unblockUser
+5. **_Function_**: penalize
 
-  **_Description_**: Command available to instructors to unblock blocked students.
+   **_Description_**: Command available to instructors to penalize students by reducing xp.
+
+6. **_Function_**: unblockUser
+
+   **_Description_**: Command available to instructors to unblock blocked students.
 
 ### <u> [db.py](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/blob/main/src/db.py) </u>
 
