@@ -15,7 +15,7 @@
 ![Github pull requests](https://img.shields.io/github/issues-pr/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0)
 [![GitHub stars](https://badgen.net/github/stars/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0)](https://badgen.net/github/stars/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0)
 ![Respost - Write comment to new Issue event](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/actions/workflows/Respost.yml/badge.svg)
-![version](https://img.shields.io/badge/version-4.1-blue)
+![version](https://img.shields.io/badge/version-2.1-blue)
 ![Close as a feature](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/actions/workflows/close_as_a_feature.yml/badge.svg)
 ![GitHub contributors](https://img.shields.io/github/contributors/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0)
