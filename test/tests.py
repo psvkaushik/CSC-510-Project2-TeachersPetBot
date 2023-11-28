@@ -33,13 +33,13 @@ testing_bot = discord.Client(intents=intents)
 async def run_tests():
     exit_status = 0
     await begin_tests()
-    # try:
-    #     print('testing QNA\n----------')
-    #     await test_qna.test(testing_bot, TEST_GUILD_ID)
-    # except AssertionError as ex:
-    #     exit_status = 1
-    #     print('exception: ', type(ex).__name__ + ':', ex)
-    #     print('--')
+    try:
+        print('testing QNA\n----------')
+        await test_qna.test(testing_bot, TEST_GUILD_ID)
+    except AssertionError as ex:
+        exit_status = 1
+        print('exception: ', type(ex).__name__ + ':', ex)
+        print('--')
     
     try:
         print('testing office hours\n----------')
