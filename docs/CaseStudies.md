@@ -13,7 +13,7 @@ We have implemented following functionalites across multiple platforms and teste
    ![blocked_user_gif](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/assets/22112102/b9860091-fafd-4515-958c-835582126bdd)
 
 3. Instructor Mentions Channel  
-   Tagging instructors results in questions being posted in the instructor QNA channel; replies are posted back to the main channel, ensuring no mention goes 
+   Tagging instructors results in questions being posted in the instructor QNA channel; replies are posted back to the main channel, ensuring no mention goes
    unnoticed.
 
    ![instructor_mention_gif](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/assets/22112102/e54c2fc2-67e2-4d81-83f3-7061e5d0120a)
