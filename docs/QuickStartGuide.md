@@ -11,5 +11,4 @@ Make sure you have setup the [bot]()
    `python bot.py`
 6. Open discord into webrowser, your teacher's pet is ready for use
 
-
 ## PUT EXAMPLES
