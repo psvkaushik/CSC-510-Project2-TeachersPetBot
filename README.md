@@ -58,7 +58,7 @@ For 5.0, we created new tools for instructors and students to use to improve cou
 
 [Click here to see the latest additions in detail](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/blob/main/docs/Improvements_Iteration4_vs_Iteration5.md)
 
-[Click here to see the features of iterations I, II, III, and IV.](docs/feature-history.md)
+[Click here to see the features of previous iterations I, II, III, and IV.](docs/feature-history.md)
 
 1. **!Award XP**  
    Instructors award XP to users in the instructor channel for encouraging positive behaviors.
