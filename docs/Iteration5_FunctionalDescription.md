@@ -42,19 +42,19 @@ Iteration 5
 
 1. **_Function_**: set
 
-   **_Description_**:
+   **_Description_**: This is used to set the custom settings for each action related to spam, available only to instructors.
 
 2. **_Function_**: clear_spam
 
-   **_Description_**:
+   **_Description_**: This function runs in loop every x seconds to clear the message enteries by each user.
 
 3. **_Function_**: init
 
-   **_Description_**:
+   **_Description_**: It starts the db setup for the bot regarding the SPAM settings.
 
 4. **_Function_**: handle_spam
 
-   **_Description_**:
+   **_Description_**: This function handles spam based on the metrics stored in the DB during init, It will also award the penalty based on the setup by the instructor and give the warnings and timeouts accordingly.
 
 ---
 
