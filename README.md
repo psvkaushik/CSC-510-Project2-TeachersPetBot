@@ -183,13 +183,11 @@ This bot has endless possibilities for functionality. Features which we are inte
 
 - Adding detailed error display integration to the bot
 - Add Tutor role
-- Add ways for users to lose exp in the rank feature(spamming etc)
-- Add commands so an instructor can customize how rank exp is awarded(what for and how much etc)
 - Refactor code to use cogs
 - Add a gibberish detector that deletes comments that are irrelevant to the class
 - Funnel the AI chat responses to a limited set(so AI only answers questions an instructor wants them to answer)
 - Upgrade to a better chatbot API that is free
-
+  ## ADD OUR FUTURE SCOPES  
 <hr />
 
 <a name="contribute"></a>
