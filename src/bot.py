@@ -1175,7 +1175,7 @@ async def end_tests(ctx):
         return
     await office_hours.close_oh(ctx.guild, 'test')
     # TODO maybe use ctx.bot.logout()
-    #await ctx.bot.close()
+    await ctx.bot.close()
     # quit(0)
 
 ###########################
