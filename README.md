@@ -37,13 +37,13 @@
 ## Contents
 
 1. [ Description ](#desc)
-2. [ Bot Features](#features)  
-3. [ Installation and Running ](#instrun)  
-4. [ Testing ](#testing)  
-5. [ Bot Commands ](#commands)  
-6. [ Future Scope ](#fscope)  
-7. [ Want to contribute? ](#contribute)  
-8. [ License ](#license)  
+2. [ Bot Features](#features)
+3. [ Installation and Running ](#instrun)
+4. [ Testing ](#testing)
+5. [ Bot Commands ](#commands)
+6. [ Future Scope ](#fscope)
+7. [ Want to contribute? ](#contribute)
+8. [ License ](#license)
 
 <a name="desc"></a>
 Click Below to Watch The Video!
