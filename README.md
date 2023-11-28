@@ -4,7 +4,6 @@
   
 <h2 align="center"> Streamline Your Class Discord</h2>
 
-[![DOI](https://zenodo.org/badge/429658277.svg)](https://zenodo.org/badge/latestdoi/429658277)
 ![Python](https://img.shields.io/badge/python-v3.7+-brightgreen.svg)
 ![GitHub](https://img.shields.io/github/license/tanmaypardeshi/CSC-510-Project2-TeachersPetBot)
 ![GitHub issues](https://img.shields.io/github/issues/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)
@@ -15,7 +14,7 @@
 
 [![codecov](https://codecov.io/gh/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/graph/badge.svg?token=3QCL57IUZF)](https://codecov.io/gh/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)
 ![GitHub](https://img.shields.io/github/license/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10023548.svg)](https://doi.org/10.5281/zenodo.10023548)
+[![DOI](https://zenodo.org/badge/718312021.svg)](https://zenodo.org/doi/10.5281/zenodo.10211826)
 [![](https://tokei.rs/b1/github/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0).
 ![Github pull requests](https://img.shields.io/github/issues-pr/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)
 [![GitHub stars](https://badgen.net/github/stars/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)](https://badgen.net/github/stars/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)
