@@ -196,13 +196,13 @@ This bot has endless possibilities for functionality. Features which we are inte
 
 <h2>How to Contribute? </h2>
 
-Check out our [CONTRIBUTING.md](https://github.com/tanmaypardeshi/CSC-510-Project2-TeachersPetBot/blob/main/CONTRIBUTING.md) for instructions on contributing to this repo and helping enhance this Discord Bot, as well as our [Code of Conduct](https://github.com/tanmaypardeshi/CSC-510-Project2-TeachersPetBot/blob/main/CODE_OF_CONDUCT.md) guidelines.
+Check out our [CONTRIBUTING.md](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/blob/main/CONTRIBUTING.md) for instructions on contributing to this repo and helping enhance this Discord Bot, as well as our [Code of Conduct](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/blob/main/CODE_OF_CONDUCT.md) guidelines.
 
 <a name="license"></a>
 
 <h2> License </h2>
 
-The project is licensed under the [MIT License](https://github.com/tanmaypardeshi/CSC-510-Project2-TeachersPetBot/blob/main/LICENSE).
+The project is licensed under the [MIT License](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/blob/main/LICENSE).
 
 <hr />
 
