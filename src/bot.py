@@ -355,13 +355,16 @@ async def on_message(message):
             instructor = True
 
     # allow messages from test bot
-    #print(message.author.bot)
-    #print(message.author.id)
-    #print(Test_bot_application_ID)
+    print('message.author.bot: ', message.author.bot)
+    print('message.author.id: ', message.author.id)
+    print('Test_bot_application_ID: ', Test_bot_application_ID)
     if message.author.bot and message.author.id == Test_bot_application_ID:
+        print('entered ctx by testbox')
         ctx = await bot.get_context(message)
         await bot.invoke(ctx)
-    if message.author == bot.user:
+        print("got the context.")
+    #print(f"Meessage author is {message.author.name} and type is {type(message.author)}")
+    if message.author.name == "bot69":
         return
 
     if not instructor:
