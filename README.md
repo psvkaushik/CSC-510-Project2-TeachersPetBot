@@ -1,6 +1,7 @@
 <p align="center"><img src="https://github.com/Ashwinshankar98/TeachersPetBot/blob/main/images/teacherspet.png" alt="alt text" width=200 height=200>
   
   <h1 align="center"> Teacher's Pet </h1>
+  <h1 align="center"> For Intructors and Students </h1>   
   
 <h2 align="center"> Streamline Your Class Discord</h2>
 
