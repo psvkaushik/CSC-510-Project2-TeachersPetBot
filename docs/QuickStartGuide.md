@@ -11,6 +11,6 @@ Make sure you have setup the [bot](https://github.com/psvkaushik/CSC-510-Project
    `python bot.py`
 6. Invite the bot to your server ([Follow instructions here](https://realpython.com/how-to-make-a-discord-bot-python/))
    - NOTE: When using the OAuth2 URL Generator, make sure you check the box which gives your bot Administrative permissions
-7. Now you can use the bot server   
+7. Now you can use the bot server
 
 ## PUT EXAMPLES
