@@ -88,7 +88,7 @@ In addition to the packages from [requirements.txt](https://github.com/tanmaypar
 - [Python 3.9.7](https://www.python.org/downloads/)
 - [Sqlite](https://www.sqlite.org/download.html)
 
-To install and run Teacher's Pet, follow the instructions in the [Installation and Testing Guide](Installation.md).
+To install and run Teacher's Pet, follow the instructions in the [here](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/blob/main/docs/InstallationGuide.md)  
 
 <a name="testing"></a>
 
