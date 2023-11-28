@@ -60,26 +60,26 @@ For 5.0, we created new tools for instructors and students to use to improve cou
 
 1. **Custom profanity settings**  
    Users entering NSFW messages can be warned, timed out, or banned based on instructor-defined or default settings—warning, timeout, followed by server ban
-   
-      ![set_profanity_settings_gif](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/assets/22112102/2fcb7cf5-98c1-46d9-9581-3037cfda9950)
 
-3. **Persistent Block from server**  
+   ![set_profanity_settings_gif](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/assets/22112102/2fcb7cf5-98c1-46d9-9581-3037cfda9950)
+
+2. **Persistent Block from server**  
    Banned users remain blocked; when the bot restarts, attempting reentry leads to an automatic kick if the bot is offline. Online attempts are barred
-4. **Instructor Channel**  
+3. **Instructor Channel**  
    Tagging instructors results in questions being posted in the instructor QNA channel; replies are posted back to the main channel, ensuring no question goes unnoticed
-5. **DB initialization**
+4. **DB initialization**
    Proper integration with databases ensures new user entry upon bot restart; detects and creates missing user database entries on server join
-6. **Spam Violation penalty**
+5. **Spam Violation penalty**
    Users receive a 10XP penalty for spamming, enhancing the XP-based ranking system, and receiving timeouts for improper behavior
-7. **NSFW violation penalty**
+6. **NSFW violation penalty**
    Custom XP penalties set by instructors for users posting NSFW messages in chat channels
-8. **!Award XP**  
+7. **!Award XP**  
    Instructors award XP to users in the instructor channel for encouraging positive behaviors
-9. **!Penalize XP**  
+8. **!Penalize XP**  
    Instructors can reduce XP for reasons like invalid input or irrelevant discussions
-10. **!Leaderboard**  
+9. **!Leaderboard**  
    Users access the top 10 rankers' leaderboard based on their ranks and XP
-11. **!unblock_user**  
+10. **!unblock_user**  
     Instructors gain authority to unblock users by usernames, allowing banned individuals to rejoin
 
 <a name="instrun"></a>
