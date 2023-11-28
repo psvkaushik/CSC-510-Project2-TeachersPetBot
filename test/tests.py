@@ -116,14 +116,15 @@ async def run_tests():
     # except AssertionError as ex:
     #     print('exception: ', type(ex).__name__ + ':', ex)
     #     print('--')
-    # try:
-    #     print('testing rank card\n----------')
-    #     await test_ranking.test(testing_bot)
-    # except AssertionError as ex:
-    #     print('exception: ', type(ex).__name__ + ':', ex)
-    #     print('--')
     try:
-        unittest.test_profanity_penalize(table = 'testrank')
+        print('testing rank card\n----------')
+        await test_ranking.test(testing_bot)
+    except AssertionError as ex:
+        print('exception: ', type(ex).__name__ + ':', ex)
+        print('--')
+    try:
+        pass
+        # unittest.test_profanity_penalize(table = 'testrank')
     finally:
         await end_tests()
         exit_status = 0

@@ -31,9 +31,9 @@ async def test_question(testing_bot):
     await qna_channel.send('!ask Hello')
 
     sleep(.5)
-    #messages = await qna_channel.history(limit=1).flatten() .flatten() no longer works on this
+    # messages = await qna_channel.history(limit=1).flatten() .flatten() #no longer works on this
     messages = [message async for message in qna_channel.history(limit=1)]
-    #print(messages)
+    print(messages)
     for m in messages:
         print(m.content)
         assert 'Q1: Hello' in m.content
