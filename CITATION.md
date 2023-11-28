@@ -3,15 +3,14 @@
 ```yaml
 version: 1.0.0
 authors:
-  - Shakthi Nandana Govindan
-  - Ashwin Shankar Umasankar
-  - Kailash Singaravelu
-  - Saikoushik
-  - Itha Ashwin
+  - Ayush Agarwal
+  - Vaishnavi Naik
+  - Surya Upadyayula
+  - Kaushik Pillalamarri
 license: MIT License
-repository-code: https://github.com/Ashwinshankar98/TeachersPetBot
+repository-code: https://github.com/CSC-510-Project3-TeachersPetBotv3.0
 identifiers:
-  - description: This is the collection of archived snapshots of version 1.0.0 of Teacher's Pet Bot
+  - description: This is the collection of archived snapshots of version 2.0 of Teacher's Pet Bot
     type: doi
-    value: 10.5281/zenodo.5640178
+    value: 10.5281/zenodo.10211826
 ```

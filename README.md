@@ -1,6 +1,7 @@
 <p align="center"><img src="https://github.com/Ashwinshankar98/TeachersPetBot/blob/main/images/teacherspet.png" alt="alt text" width=200 height=200>
   
   <h1 align="center"> Teacher's Pet </h1>
+  <h1 align="center"> For Intructors and Students </h1>   
   
 <h2 align="center"> Streamline Your Class Discord</h2>
 
@@ -29,7 +30,7 @@
 ## Contents
 
 1. [ Description ](#desc)
-2. [ Bot Features](#features)
+2. [ New Features](#features)
 3. [ Installation and Running ](#instrun)
 4. [ Testing ](#testing)
 5. [ Bot Commands ](#commands)
@@ -38,9 +39,10 @@
 8. [ License ](#license)
 
 <a name="desc"></a>
-Click Below to Watch The Video!
 
-https://youtu.be/wzObedlYgho
+## Click Below to Watch The Video!
+
+https://www.youtube.com/watch?v=QXUmwBD5vks
 
 <h2>Software Engineering Project for CSC 510 : Phase V</h2>
 
@@ -52,30 +54,59 @@ For 5.0, we created new tools for instructors and students to use to improve cou
 
 <a name="features"></a>
 
-<h2>Bot Features</h2>
+## New Features
 
-[Click here to see the features of iterations I, II, III and IV.](docs/feature-history.md)
+[Click here to see the latest additions in detail](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/blob/main/docs/Improvements_Iteration4_vs_Iteration5.md)
 
-1. **Custom profanity settings**  
-   Users entering NSFW messages can be warned, timed-out, or banned based on instructor-defined or default settings—warning, timeout, followed by server ban
-2. **Persistent Block from server**  
-   Banned users remain blocked; when the bot restarts, attempting reentry leads to an automatic kick if the bot is offline. Online attempts are barred
-3. **Instructor Channel**  
-   Tagging instructors results in questions being posted in the instructor QNA channel; replies posted back to the main channel, ensuring no question goes unnoticed
-4. **DB initialization**
-   Proper integration with databases ensures new user entry upon bot restart; detects and creates missing user database entries on server join
+[Click here to see the features of previous iterations I, II, III, and IV.](docs/feature-history.md)
+
+1. **!Award XP**  
+   Instructors award XP to users in the instructor channel for encouraging positive behaviors.
+
+   ![award_gif](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/assets/22112102/c0ac2d86-96ae-46f9-add3-d3d3fa593733)
+
+2. **!Penalize XP**  
+   Instructors can reduce XP for reasons like invalid input or irrelevant discussions.
+
+   ![penalize_gif](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/assets/22112102/c26fa9ed-2d64-4be3-9ae0-1064079d618b)
+
+3. **!Leaderboard**  
+   Users access the top 10 rankers' leaderboard based on their ranks and XP.
+
+   ![leaderboard_gif](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/assets/22112102/730895ed-c163-4496-9dd9-defb8d442b82)
+
+4. **Instructor Mentions Channel**  
+   Tagging instructors results in questions being posted in the instructor QNA channel; replies are posted back to the main channel, ensuring no mention goes unnoticed.
+
+   ![instructor_mention_gif](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/assets/22112102/e54c2fc2-67e2-4d81-83f3-7061e5d0120a)
+
 5. **Spam Violation penalty**
-   Users receive 10XP penalty for spamming, enhancing the XP-based ranking system and receiving timeouts for improper behavior
+   Users receive a 10XP penalty for spamming, enhancing the XP-based ranking system, and receiving timeouts for improper behavior.
+
+   ![spam_gif](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/assets/22112102/0912b6ce-50ce-45e8-9180-02ad3be6ec8d)
+
 6. **NSFW violation penalty**
-   Custom XP penalties set by instructors for users posting NSFW messages in chat channels
-7. **!Award XP**  
-   Instructors award XP to users in the instructor channel for encouraging positive behaviors
-8. **!Penalize XP**  
-   Instructors can reduce XP for reasons like invalid input or irrelevant discussions
-9. **!Leaderboard**  
-   Users access top 10 rankers' leaderboard based on their ranks and XP
-10. **!unblock_user**  
-    Instructors gain authority to unblock users by usernames, allowing banned individuals to rejoin
+   Custom XP penalties set by instructors for users posting NSFW messages in chat channels.
+
+   ![nsfw_profanity_gif](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/assets/22112102/0a1a5f82-0da4-4b3f-a1d6-db4694e4791f)
+
+7. **Custom profanity settings**  
+   Users entering NSFW messages can be warned, timed out, or banned based on instructor-defined or default settings—warning, timeout, followed by server ban.
+
+   ![set_profanity_settings_gif](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/assets/22112102/2fcb7cf5-98c1-46d9-9581-3037cfda9950)
+
+8. **Persistent Block from server**  
+   Banned users remain blocked; when the bot restarts, attempting reentry leads to an automatic kick if the bot is offline. Online attempts are barred.
+
+   ![blocked_user_gif](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/assets/22112102/b9860091-fafd-4515-958c-835582126bdd)
+
+9. **!unblock_user**  
+   Instructors gain authority to unblock users by usernames, allowing banned individuals to rejoin.
+
+   ![unblock_user_gif](https://github.com/psvkaushik/CSC-510-Project3-TeachersPetBotv2.0/assets/22112102/996ac853-8eb4-45aa-a3a9-f46b39cdd7ab)
+
+10. **DB initialization**
+    Proper integration with databases ensures new user entry upon bot restart; detects and creates missing user database entries on server join.
 
 <a name="instrun"></a>
 
@@ -106,7 +137,7 @@ To run tests on the Teacher's Pet, follow instructions in the [Installation and 
 
 `!custom_profanity_settings` to set the profanity settings
 
-`!leaderboard` any user can run to see the leaderboard of top 10 rankers
+`!leaderboard` any user can run to see the leaderboard of the top 10 rankers
 
 `!penalize <@member> <xp_points_penalized>` can use this new command to reduce XP (Instructor command)
 
@@ -141,15 +172,15 @@ To run tests on the Teacher's Pet, follow instructions in the [Installation and 
 
 `!oh exit` Exit the office hour queue
 
-`!oh next` Go to next student in queue as an instructor (Instructor command)
+`!oh next` Go to the next student in the queue as an instructor (Instructor command)
 
 `!help` Gets the descriptions for all commands
 
 `!help <command>` Describes a command in detail
 
-`!ping` Find the latency of network
+`!ping` Find the latency of the network
 
-`!stats` Gets the statistics of system and softwares used
+`!stats` Gets the statistics of the system and software used
 
 `!regrade-request` This command lets a student add a regrade-request
 
@@ -179,18 +210,16 @@ To run tests on the Teacher's Pet, follow instructions in the [Installation and 
 
 <h2> Future Scope </h2>
 
-This bot has endless possibilities for functionality. Features which we are interested in adding but did not have time for include but are not limited to:
+This bot has endless possibilities for functionality. Features that we are interested in adding but did not have time for include but are not limited to:
 
 - [ ] Adding detailed error display integration to the bot (next 1 month)
 - [ ] Add Tutor role (next 1 month)
-- [ ] Refactor code to use cogs (next 2 month)
-- [ ] Add a gibberish detector that deletes comments that are irrelevant to the class (next 3 month)
-- [ ] Funnel the AI chat responses to a limited set(so AI only answers questions an instructor wants them to answer) (next 5 month)
-- [ ] Upgrade to a better chatbot API that is free (next 6 month)
+- [ ] Refactor code to use cogs (next 2 months)
+- [ ] Add a gibberish detector that deletes comments that are irrelevant to the class (next 3 months)
+- [ ] Funnel the AI chat responses to a limited set(so AI only answers questions an instructor wants them to answer) (next 5 months)
+- [ ] Upgrade to a better chatbot API that is free (next 6 months)
 
-## ADD OUR FUTURE SCOPES
-
-  <hr />
+<hr />
 
 <a name="contribute"></a>
 
@@ -245,6 +274,6 @@ The project is licensed under the [MIT License](https://github.com/psvkaushik/CS
 
 # Contact us
 
-For any questions and contribution please contact: ncsuse23@gmail.com
+For any questions and contributions please contact: ncsuse23@gmail.com
 
 Made with ❤️ on GitHub.

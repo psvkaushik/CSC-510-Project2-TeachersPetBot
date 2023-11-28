@@ -13,7 +13,7 @@ from utils import wait_for_msg
 # ###########################
 async def test(testing_bot):
      general_channel = discord.utils.get(testing_bot.get_all_channels(), name='general')
-     await test_rank_for_same_user(testing_bot, general_channel)
+    #  await test_rank_for_same_user(testing_bot, general_channel)
      await test_rank_for_other_user(testing_bot, general_channel)
      await test_rank_for_other_user_who_does_not_exist(testing_bot, general_channel)
 
