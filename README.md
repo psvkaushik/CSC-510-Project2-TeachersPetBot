@@ -22,6 +22,8 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)
 [![Style Checker and Prettify Code](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/actions/workflows/Style_Checker_and_Prettify_Code.yml/badge.svg)](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/actions/workflows/Style_Checker_and_Prettify_Code.yml)
 [![Running Code Coverage](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/actions/workflows/codecov.yml/badge.svg)](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/actions/workflows/codecov.yml)
+![Pylint](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/actions/workflows/pylint.yml/badge.svg)
+
 
 <!-- I am not sure about this parameter yet. Any idea what to do about this? -->
 <!-- ![GitHub deployments](https://img.shields.io/github/deployments/Ashwinshankar98/TeachersPetBot/discord-bot-phase2)<br/> -->
