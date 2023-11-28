@@ -7,7 +7,7 @@
 [![DOI](https://zenodo.org/badge/429658277.svg)](https://zenodo.org/badge/latestdoi/429658277)
 ![Python](https://img.shields.io/badge/python-v3.7+-brightgreen.svg)
 ![GitHub](https://img.shields.io/github/license/tanmaypardeshi/CSC-510-Project2-TeachersPetBot)
-![GitHub issues](https://img.shields.io/github/issues/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0 )
+![GitHub issues](https://img.shields.io/github/issues/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0)
 ![Lines of code](https://tokei.rs/b1/github/tanmaypardeshi/CSC-510-Project2-TeachersPetBot)
 [![codecov](https://codecov.io/gh/tanmaypardeshi/CSC-510-Project2-TeachersPetBot/branch/main/graph/badge.svg?token=QTKU51PZSO)](https://codecov.io/gh/tanmaypardeshi/CSC-510-Project2-TeachersPetBot)
