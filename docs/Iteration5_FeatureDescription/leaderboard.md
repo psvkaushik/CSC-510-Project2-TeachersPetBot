@@ -1,10 +1,10 @@
 # About !leaderboard
 
-This command lets users to check the leaderboard  
+This command lets users to check the leaderboard
 
 # Location of Code
 
-The code that implements the above mentioned functionality is located [here](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/blob/main/src/bot.py)  
+The code that implements the above mentioned functionality is located [here](https://github.com/psvkaushik/CSC-510-Project2-TeachersPetBotv2.0/blob/main/src/bot.py)
 
 # Code Description
 
@@ -15,6 +15,6 @@ The code that implements the above mentioned functionality is located [here](htt
 
 # How to run it? (Small Example)
 
-Enter space-separated: "!leaderboard  
+Enter space-separated: "!leaderboard
 
-Successful execution looks as below:    
+Successful execution looks as below:
