@@ -102,10 +102,10 @@ To run tests on the Teacher's Pet, follow instructions in the [Installation and 
 
 <h2> Bot Commands </h2>
 
-<h3> Bot commands from iteration V </h3>  
+<h3> Bot commands from iteration V </h3>
 
 `!custom_profanity_settings` to set the profanity settings
-  
+
 `!leaderboard` any user can run to see the leaderboard of top 10 rankers
 
 `!penalize <@member> <xp_points_penalized>` can use this new command to reduce XP (Instructor command)
