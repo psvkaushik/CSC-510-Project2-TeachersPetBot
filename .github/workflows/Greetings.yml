@@ -9,13 +9,13 @@ jobs:
       issues: write
       pull-requests: write
     steps:
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '14'
-    - name: Runs the actions
-    - uses: actions/first-interaction@v1
-      with:
-        repo-token: ${{ secrets.TOKEN }}
-        issue-message: 'Welcome! Congratulations on being assigned your first issue! Have fun!'
-        pr-message: 'Thank you for your pull request! Have fun!'
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+      - name: Runs the actions
+      - uses: actions/first-interaction@v1
+        with:
+          repo-token: ${{ secrets.TOKEN }}
+          issue-message: 'Welcome! Congratulations on being assigned your first issue! Have fun!'
+          pr-message: 'Thank you for your pull request! Have fun!'
